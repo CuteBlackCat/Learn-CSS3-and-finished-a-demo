@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Photos</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="JS/main.js"></script>
+           <script type="text/javascript" src="JS/data.js"></script>
+</head>
+<body onselectstart="return false">
+<!-- 2、改写视图，为模板字符串 -->
+	<div class="wrap" id="wrap">
+		<div class="photo  photo_front photo_center" id="photo_{{index}}" onclick="turn(this)" >
+		<div class="photo-wrap">
+			<div class="side side-front">
+				<p class="image"><img src="images/{{img}}.jpg"/></p>
+				<p class="caption">{{caption}}</p>
+			</div>
+			<div class="side side-back"><p class="desc">{{desc}}</p></div>
+		</div>
+		</div>
+	</div>
+	<audio src="李荣浩 - 老街.mp3" autoplay="autoplay" loop="loop" style="display: none" ></audio>
+</body>
+</html>
